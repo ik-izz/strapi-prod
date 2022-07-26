@@ -8,7 +8,7 @@
 //       user: env('DATABASE_USERNAME', 'izz'),
 //       password: env('DATABASE_PASSWORD', 'vngle123'),
 //       ssl: env.bool('DATABASE_SSL', false),
-//     },
+//     }, 
 //   },
 // });
 module.exports = ({ env }) => ({
