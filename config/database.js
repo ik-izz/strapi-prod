@@ -15,7 +15,7 @@ module.exports = ({ env }) => ({
   connection: {
     client: "postgres",
     connection: {
-      host: env("DATABASE_HOST", "172.31.29.241"),
+      host: env("DATABASE_HOST", "strapi-database.cedrjh0ctfxo.us-east-1.rds.amazonaws.com"),
       port: env.int("DATABASE_PORT", 5432),
       database: env("DATABASE_NAME", "strapi"),
       user: env("DATABASE_USERNAME", "postgres"),
