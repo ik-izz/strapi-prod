@@ -22,7 +22,7 @@
     "Date": {
       "type": "datetime",
       "required": true,
-      "default": "1969-12-31T05:00:00.000Z"
+      "default": "1969-12-31 05:00:00.000Z"
     },
     "Media": {
       "allowedTypes": [
