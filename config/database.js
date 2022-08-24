@@ -1,27 +1,14 @@
-// module.exports = ({ env }) => ({
-//   connection: {
-//     client: 'postgres',
-//     connection: {
-//       host: env('DATABASE_HOST', '127.0.0.1'),
-//       port: env.int('DATABASE_PORT', 5432),
-//       database: env('DATABASE_NAME', 'postgres'),
-//       user: env('DATABASE_USERNAME', 'izz'),
-//       password: env('DATABASE_PASSWORD', 'vngle123'),
-//       ssl: env.bool('DATABASE_SSL', false),
-//     }, 
-//   },
-// });
 module.exports = ({ env }) => ({
   connection: {
-    client: "postgres",
+    client: 'postgres',
     connection: {
-      host: env("DATABASE_HOST", "database-1.cedrjh0ctfxo.us-east-1.rds.amazonaws.com"),
-      port: env.int("DATABASE_PORT", 5432),
-      database: env("DATABASE_NAME", "strapi"),
-      user: env("DATABASE_USERNAME", "postgres"),
-      password: env("DATABASE_PASSWORD", "vngle123"),
-    },
-    useNullAsDefault: true,
+      host: env('DATABASE_HOST', env('DATABASE_HOST')),
+      port: env.int('DATABASE_PORT', env('DATABASE_PORT')),
+      database: env('DATABASE_NAME', env('DATABASE_NAME')),
+      user: env('DATABASE_USERNAME', env('DATABASE_USERNAME')),
+      password: env('DATABASE_PASSWORD', env('DATABASE_PASSWORD')),
+      ssl: env.bool('DATABASE_SSL', false),
+    }, 
   },
 });
 
